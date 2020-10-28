@@ -9,7 +9,7 @@ import (
 )
 
 func Foo() {
-	fmt.Println("FOO")
+	fmt.Println("FOO v2")
 
 	sysinfo := &unix.Sysinfo_t{}
 	if err := unix.Sysinfo(sysinfo); err != nil {
