@@ -1,6 +1,6 @@
 // +build linux
 
-package host
+package disk
 
 import (
 	"fmt"
