@@ -13,7 +13,7 @@ func Foo() {
 
 	sysinfo := &unix.Sysinfo_t{}
 	if err := unix.Sysinfo(sysinfo); err != nil {
-		return 0, err
+		panic(err)
 	}
-	fmt.Println("Uptime %d", sysinfo.Uptime)
+	fmt.Printf("Uptime %v\n", sysinfo.Uptime)
 }
